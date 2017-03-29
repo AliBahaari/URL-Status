@@ -46,6 +46,6 @@ For Some URLs That Are Not Valid, Used Exceptions To Inform You What Is The Prob
 I Have Used "Requests" & "BeautifulSoup" For This Work.
 
 # Contribute
-Please Contribute To Save More Status Codes Links Like 503 & ... (At The Moment It Just Saves 200 & 404 Links)
+Please Contribute To Save More Links That Have Other Status Codes Like 503 & ... (At The Moment It Just Saves 200 & 404 Links)
 
 Thanks !
