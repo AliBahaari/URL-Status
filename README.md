@@ -22,6 +22,8 @@ url_status.get_url()
 
 6. You See The Results In Terminal & A File That Logs Has Been Saved In That 
 
+Note : Test File Attached !
+
 # Methods
 
 URLStatus Has 2 Methods :
@@ -31,7 +33,7 @@ URLStatus Has 2 Methods :
 ```python
 from URLStatus import URLStatus
 
-url_status = URLStatus('http://www.winatis.ir', 'Links Status')
+url_status = URLStatus('http://www.example.com', 'Links Status')
 url_status.clear_file()
 ```
 
@@ -39,5 +41,11 @@ url_status.clear_file()
 
 For Some URLs That Are Not Valid, Used Exceptions To Inform You What Is The Problem & Will Not Be Saved In The File.
 
+# Modules
+
+I Have Used "Requests" & "BeautifulSoup" For This Work.
+
 # Contribute
 Please Contribute To Save More Status Codes Links Like 503 & ... (At The Moment It Just Saves 200 & 404 Links)
+
+Thanks !
