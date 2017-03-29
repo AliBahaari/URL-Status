@@ -17,7 +17,7 @@ from URLStatus import URLStatus
 url_status = URLStatus('http://www.winatis.ir', 'Links Status')
 url_status.get_url()
 ```
-5. Save In A File With ```.py``` Suffix Like ```URL.py``` & Run It With This Command :
+5. Save In A File With ```.py``` Extension Like ```URL.py``` & Run It With This Command :
 ```python3 URL.py```
 
 6. You See The Results In Terminal & A File That Logs Has Been Saved In That 
