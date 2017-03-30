@@ -1,9 +1,15 @@
 from requests import get
 from bs4 import BeautifulSoup
+from json import dumps
 
 
 class URLStatus:
     """ Get Website URLs Status ... """
+
+    status_codes = {
+        '200 (OK)': [],
+        '404 (Not Found)': []
+    }
 
     def __init__(self, url, file_name):
         self.url = url
@@ -24,14 +30,14 @@ class URLStatus:
                     except Exception as Error:
                         print(str(Error) + '\n')
                     else:
-                        file_open = open(self.file_name + '.txt', 'a')
                         if new_request.status_code == 200:
-                            file_open.write(href_address + ' - 200 (OK)\n\n')
-                            print('Saved To File :' + href_address + ' - 200 (OK)\n')
+                            URLStatus.status_codes['200 (OK)'].append(href_address)
                         if new_request.status_code == 404:
-                            file_open.write(href_address + ' - 404 (Not Found)\n\n')
-                            print('Save To File :' + href_address + ' - 404 (Not Found)\n')
-                        file_open.close()
+                            URLStatus.status_codes['404 (Not Found)'].append(href_address)
+                file_open = open(self.file_name + '.txt', 'a')
+                file_open.write(str(dumps(URLStatus.status_codes, indent=4)))
+                file_open.close()
+                print('Saved To File :' + str(URLStatus.status_codes))
 
     def clear_file(self):
         with open(self.file_name + '.txt', "w"):
