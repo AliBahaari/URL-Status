@@ -3,6 +3,10 @@
 URL Status Is A Python Script In Order To Retrieve All Links In A Website & Check The Status Of Them. After Checking All Links Status, It Saves The Links That Have 200 Or 404 Status Code With Their Status Code & Message In A File Which User Choose Its Name.<br>
 It Is Used In Some SEO-Checker Sites To Check There Is No 404 Error In Website Links.
 
+# Version 1 To 2
+
+In Version 1, You Had Low Performance & Speed Because Logs Saved Individually, But In Version 2, The Scripts Saves All Logs One Time. Also Logs Have Better View Than The Version 1.
+
 # Tutorial
 
 Steps To Check A Site :
