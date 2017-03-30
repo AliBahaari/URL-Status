@@ -37,7 +37,7 @@ class URLStatus:
                 file_open = open(self.file_name + '.txt', 'a')
                 file_open.write(str(dumps(URLStatus.status_codes, indent=4)))
                 file_open.close()
-                print('Saved To File :' + str(URLStatus.status_codes))
+                print('Saved To File :' + str(dumps(URLStatus.status_codes)))
 
     def clear_file(self):
         with open(self.file_name + '.txt', "w"):
