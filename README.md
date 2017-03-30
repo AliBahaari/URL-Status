@@ -43,7 +43,7 @@ For Some URLs That Are Not Valid, Used Exceptions To Inform You What Is The Prob
 
 # Modules
 
-I Have Used "Requests" & "BeautifulSoup" For This Work.
+I Have Used "Requests" (```get``` Method), "BeautifulSoup" (```BeautifulSoup``` Class) & "JSON" (```dumps``` Method) For This Work.
 
 # Contribute
 Please Contribute To Save More Links That Have Other Status Codes Like 503 & ... (At The Moment It Just Saves 200 & 404 Links)
