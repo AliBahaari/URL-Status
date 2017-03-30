@@ -14,7 +14,7 @@ Steps To Check A Site :
 ```python
 from URLStatus import URLStatus
 
-url_status = URLStatus('http://www.winatis.ir', 'Links Status')
+url_status = URLStatus('http://www.example.com', 'Links Status')
 url_status.get_url()
 ```
 5. Save In A File With ```.py``` Extension Like ```URL.py``` & Run It With This Command :
