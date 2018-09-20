@@ -1,4 +1,4 @@
-# Test Codes
+# Test
 
 from URLStatus import URLStatus
 
