@@ -1,55 +1,55 @@
-# URL Status
+# Url Status
 
-URL Status Is A Python Script In Order To Retrieve All Links In A Website & Check The Status Of Them. After Checking All Links Status, It Saves The Links That Have 200 Or 404 Status Code With Their Status Code & Message In A File Which User Choose Its Name.<br>
-It Is Used In Some SEO-Checker Sites To Check There Is No 404 Error In Website Links.
+**Url Status** is a ***Python*** script in order to retrieve all links from a website to check their status. After checking, It saves the links having 200 or 404 status code and in a file which user choose its name.
 
-# Version 1 To 2
+It is used in some ***Seo Checker*** sites to check there is no 404 error in website links.
 
-In Version 1, You Had Low Performance & Speed Because Logs Saved Individually, But In Version 2, The Scripts Saves All Logs One Time. Also Logs Have Better View Than The Version 1.
+## Version 1 to 2
 
-# Tutorial
+In version 1, You had low performance and speed because logs saved individually, But in version 2, The script saves all logs one time.
+Also logs have better view than the version 1.
 
-Steps To Check A Site :
+## Tutorial
 
-1. Import URLStatus Class From URLStatus File 
-2. Create An Object From URLStatus
-3. First Parameter Is Website URL (With Protocol) & Second One Is The File Name That Logs Save In It
-4. Then Use ```get_url``` Method To Run Operation On The Website Links & Save Logs To The File (The File Automaticlly Will Be Created)
+Steps :
+
+1. Import `urlstatus` class from ***URLStatus*** file 
+2. Create an object from `urlstatus`
+3. First parameter is website url (with protocol) and second one is the file name that logs save in it
+4. Then use `get_url` method for running script
 ```python
-from URLStatus import URLStatus
+from urlstatus import urlstatus
 
-url_status = URLStatus('http://www.example.com', 'Links Status')
+url_status = urlstatus('http://www.example.com', 'links status')
 url_status.get_url()
 ```
-5. Save In A File With ```.py``` Extension Like ```URL.py``` & Run It With This Command :
-```python3 URL.py```
+5. Save in a file with `.py` extension like `url.py` and run it with this command :
+`python3 url.py`
 
-6. You See The Results In Terminal & A File That Logs Has Been Saved In That 
+6. You see the results in your terminal and a file that logs has been saved in that 
 
-Note : Test File Attached !
+Note : Test file attached.
 
-# Methods
+## Methods
 
-URLStatus Has 2 Methods :
+URLStatus has 2 methods :
 
-1. ```get_url``` (Mentioned Its Works)
-2. ```clear_file``` (All Logs Append In A File, So If You Want To Clear The File Contents, Use This Method As Below) :
+1. `get_url` (Mentioned its works)
+2. `clear_file` (All logs append in a file, So if you want to clear the file contents, Use this method as below) :
 ```python
-from URLStatus import URLStatus
+from urlstatus import urlstatus
 
-url_status = URLStatus('http://www.example.com', 'Links Status')
+url_status = urlstatus('http://www.example.com', 'links status')
 url_status.clear_file()
 ```
 
-# Exceptions
+## Exceptions
 
-For Some URLs That Are Not Valid, Used Exceptions To Inform You What Is The Problem & Will Not Be Saved In The File.
+For some URLs that are not valid, Used exceptions to inform you what is the problem and they will not be saved in the file.
 
-# Modules
+## Modules
 
-I Have Used "Requests" (```get``` Method), "BeautifulSoup" (```BeautifulSoup``` Class) & "JSON" (```dumps``` Method) For This Work.
+The script uses ***requests*** (`get` method), ***beautifulsoup*** (`beautifulsoup` class) and ***json*** (`dumps` method).
 
-# Contribute
-Please Contribute To Save More Links That Have Other Status Codes Like 503 & ... (At The Moment It Just Saves 200 & 404 Links)
-
-Thanks !
+## Contribute
+Please contribute to save more links that have other status codes like 503 and etc.
