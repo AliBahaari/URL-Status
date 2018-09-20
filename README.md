@@ -1,6 +1,6 @@
-# Url Status
+# URL Status
 
-**Url Status** is a ***Python*** script in order to retrieve all links from a website to check their status. After checking, It saves the links having 200 or 404 status code and in a file which user choose its name.
+**URL Status** is a ***Python*** script in order to retrieve all links from a website to check their status. After checking, It saves the links having 200 or 404 status code and in a file which user choose its name.
 
 It is used in some ***Seo Checker*** sites to check there is no 404 error in website links.
 
@@ -15,7 +15,7 @@ Steps :
 
 1. Import `urlstatus` class from ***URLStatus*** file 
 2. Create an object from `urlstatus`
-3. First parameter is website url (with protocol) and second one is the file name that logs save in it
+3. First parameter is website URL (With protocol) and second one is the file name that logs save in it
 4. Then use `get_url` method for running script
 ```python
 from urlstatus import urlstatus
@@ -23,8 +23,8 @@ from urlstatus import urlstatus
 url_status = urlstatus('http://www.example.com', 'links status')
 url_status.get_url()
 ```
-5. Save in a file with `.py` extension like `url.py` and run it with this command :
-`python3 url.py`
+5. Save in a file with `.py` extension like `URL.py` and run it with this command :
+`python3 URL.py`
 
 6. You see the results in your terminal and a file that logs has been saved in that 
 
