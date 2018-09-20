@@ -49,7 +49,7 @@ For some URLs that are not valid, Used exceptions to inform you what is the prob
 
 ## Modules
 
-The script uses ***requests*** (`get` method), ***beautifulsoup*** (`beautifulsoup` class) and ***json*** (`dumps` method).
+The script uses ***requests*** (`get` method), ***BeautifulSoup*** (`bs4` class) and ***json*** (`dumps` method).
 
 ## Contribute
 Please contribute to save more links that have other status codes like 503 and etc.
