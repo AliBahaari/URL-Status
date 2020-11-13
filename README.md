@@ -1,7 +1,5 @@
 # URL Status
 
-![Python Badge](https://alibahaari.github.io/Badge/Python.png)
-
 ***URL Status*** retrieves all links from a website to check their status, then it saves the links having 200 or 404 HTTP status code in a file choosing its name.
 
 ## Tutorial
