@@ -1,6 +1,6 @@
 # URL Status
 
-***URL Status*** retrieves all links from a website to check their status, then it saves the links having 200 or 404 HTTP status code in a file choosing its name.
+***URL Status*** retrieves all links from a website to check their status, then it saves the links having 200 and 404 HTTP status codes in a file choosing its name.
 
 ## Tutorial
 
