@@ -11,7 +11,7 @@
 ```python
 from urlstatus import urlstatus
 
-url_status = urlstatus('http://www.example.com', 'links status')
+url_status = urlstatus('http://www.example.com', 'Links Status')
 url_status.get_url()
 ```
 5. Save in a file with `.py` extension like `URL.py` and run it with the command below :
