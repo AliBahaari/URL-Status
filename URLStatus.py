@@ -18,26 +18,34 @@ class URLStatus:
     def get_url(self):
         try:
             request_site = get(self.url)
-        except Exception as SiteError:
-            print(str(SiteError) + '\n')
-        else:
+
             if request_site.status_code == 200:
                 bs = BeautifulSoup(request_site.text, 'lxml')
-                for aItem in bs.find_all('a'):
-                    href_address = aItem.get('href')
+
+                for a_tag in bs.find_all('a'):
+                    a_tag_href = a_tag.get('href')
                     try:
-                        new_request = get(href_address)
-                    except Exception as Error:
-                        print(str(Error) + '\n')
-                    else:
-                        if new_request.status_code == 200:
-                            URLStatus.status_codes['200 (OK)'].append(href_address)
-                        if new_request.status_code == 404:
-                            URLStatus.status_codes['404 (Not Found)'].append(href_address)
-                file_open = open(self.file_name + '.txt', 'a')
-                file_open.write(str(dumps(URLStatus.status_codes, indent=4)))
+                        a_tag_request = get(a_tag_href)
+
+                        if a_tag_request.status_code == 200:
+                            self.status_codes['200 (OK)'].append(
+                                a_tag_href)
+                        if a_tag_request.status_code == 404:
+                            self.status_codes['404 (Not Found)'].append(
+                                a_tag_href)
+
+                    except:
+                        pass
+                        print(str(a_tag_href) + " - Can't Be Connected")
+
+                file_open = open(self.file_name + '.txt', 'w')
+                file_open.write(str(dumps(self.status_codes, indent=4)))
                 file_open.close()
-                print('Saved To File :\n' + str(dumps(URLStatus.status_codes)))
+                print('Saved To File :\n' + str(dumps(self.status_codes)))
+
+        except:
+            pass
+            print("Can't Be Connected")
 
     def clear_file(self):
         with open(self.file_name + '.txt', "w"):
